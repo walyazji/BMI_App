@@ -11,22 +11,27 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'BMI Application',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
-        canvasColor: Colors.black,
-        textTheme: const TextTheme(
-          headline1: TextStyle(
-              fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white70),
-        ),
-      ),
+          primarySwatch: Colors.teal,
+          canvasColor: Colors.black,
+          textTheme: const TextTheme(
+            headline1: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.white70),
+          ),
+          iconTheme: const IconThemeData(
+            color: Colors.white70,
+            size: 90,
+          )),
 
-      // home: const MyHomePage(),
-      home: const Result(
-        age: 2,
-        isMale: true,
-        result: 40.0,
-      ),
+      home: const MyHomePage(),
+      // home: const Result(
+      //   age: 2,
+      //   isMale: true,
+      //   result: 40.0,
+      // ),
     );
   }
 }
