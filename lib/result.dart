@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
-  const Result({required this.result, required this.isMale, required this.age});
+  Result({required this.result, required this.isMale, required this.age});
 
   final double result;
   final bool isMale;
   final int age;
+  static String screen = 'result';
   // static TextStyle boldStyle =
   //     const TextStyle(fontSize: 25, fontWeight: FontWeight.bold);
 
