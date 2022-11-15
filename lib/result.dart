@@ -12,13 +12,13 @@ class Result extends StatelessWidget {
   String get resultPhrase {
     String resultText = '';
     if (result >= 30)
-      resultText = 'انت بقرة يا حبيبي';
+      resultText = 'Obese';
     else if (result > 25 && result < 30)
-      resultText = 'نص بقرة';
+      resultText = 'Overweight';
     else if (result > 18.5 && result < 24.9)
-      resultText = 'سمبتيك';
+      resultText = 'Normal';
     else
-      resultText = 'مريقن منيل';
+      resultText = 'Thin';
 
     return resultText;
   }
