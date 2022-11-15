@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
-  Result({required this.result, required this.isMale, required this.age});
+  const Result({required this.result, required this.isMale, required this.age});
 
   final double result;
   final bool isMale;
